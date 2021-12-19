@@ -11,7 +11,7 @@ async def handle_force_sub(bot, cmd):
         if user.status == "kicked":
             await bot.send_message(
                 chat_id=cmd.from_user.id,
-                text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/ZonaKimochi).",
+                text="Sorry Sir, You are Banned to use me. Contact [Owners](https://t.me/Veyynihbos).",
                 parse_mode="markdown",
                 disable_web_page_preview=True
             )
@@ -19,11 +19,11 @@ async def handle_force_sub(bot, cmd):
     except UserNotParticipant:
         await bot.send_message(
             chat_id=cmd.from_user.id,
-            text="**Please Gabung Channel ini Untuk Menggunakan Bot!**\n\nDue to Overload, Hanya Pengikut yang Dapat Menggunakan Bot!",
+            text="**Bergabung dengan Channel Untuk Menggunakan Bot!**\n\nDue to Overload, Hanya Member yang Dapat Menggunakan Bot!",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🤖 Gabung Update Channel", url=invite_link.invite_link)
+                        InlineKeyboardButton("Gabung Channel", url=invite_link.invite_link)
                     ],
                     [
                         InlineKeyboardButton("🔄 Muat Ulang File 🔄", callback_data="refreshmeh")
@@ -36,7 +36,7 @@ async def handle_force_sub(bot, cmd):
     except Exception:
         await bot.send_message(
             chat_id=cmd.from_user.id,
-            text="Terjadi Kesalahan. Contact my [Support Group](https://t.me/ZonaKimochi).",
+            text="Terjadi Kesalahan. Contact [Owners](https://t.me/Veyynihbos).",
             parse_mode="markdown",
             disable_web_page_preview=True
         )

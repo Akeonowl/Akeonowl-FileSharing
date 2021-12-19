@@ -50,8 +50,8 @@ async def start(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Owners Bot", url="https://t.me/ZonaKimochi"),
-                        InlineKeyboardButton("Channel", url="https://t.me/AsupanInsomniaViral")
+                        InlineKeyboardButton("Owners Bot", url="https://t.me/Veyynihbos"),
+                        InlineKeyboardButton("Channel", url="https://t.me/CinemaindoXXI")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -98,7 +98,7 @@ async def main(bot: Client, message: Message):
                 pass
 
         if message.from_user.id in Config.BANNED_USERS:
-            await message.reply_text("Sorry, You are banned!\n\nContact [Support Group](https://t.me/ZonaKimochi)",
+            await message.reply_text("Sorry, You are banned!\n\nContact [Support Group](https://t.me/Diskusi_Cinemaindo)",
                                      disable_web_page_preview=True)
             return
 
@@ -118,8 +118,8 @@ async def main(bot: Client, message: Message):
                 parse_mode="Markdown",
                 reply_markup=InlineKeyboardMarkup(
                     [[InlineKeyboardButton("Open Link", url=share_link)],
-                     [InlineKeyboardButton("Bots Channel", url="https://t.me/AsupanInsomniaViral"),
-                      InlineKeyboardButton("Support Group", url="https://t.me/AsupanInsomniaViralGroup")]]
+                     [InlineKeyboardButton("Bots Channel", url="https://t.me/CinemaindoXXI"),
+                      InlineKeyboardButton("Support Group", url="https://t.me/Diskusi_Cinemaindo")]]
                 ),
                 disable_web_page_preview=True
             )
@@ -312,7 +312,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 [
                     [
                         InlineKeyboardButton("Source Codes of Bot",
-                                             url="https://github.com/Akeonowl")
+                                             url="google.com")
                     ],
                     [
                         InlineKeyboardButton("Go Home", callback_data="gotohome"),
@@ -331,7 +331,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 [
                     [
                         InlineKeyboardButton("Source Codes of Bot",
-                                             url="https://github.com/Akeonowl")
+                                             url="https://google.com")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -349,8 +349,8 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Owners Bot", url="https://t.me/ZonaKimochi"),
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/AsupanInsomniaViral")
+                        InlineKeyboardButton("Owners Bot", url="https://t.me/Veyynihbos"),
+                        InlineKeyboardButton("Bots Channel", url="https://t.me/CinemaindoXXI")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -367,18 +367,18 @@ async def button(bot: Client, cmd: CallbackQuery):
                 user = await bot.get_chat_member(int(Config.UPDATES_CHANNEL), cmd.message.chat.id)
                 if user.status == "kicked":
                     await cmd.message.edit(
-                        text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/AsupanInsomniaViralGroup).",
+                        text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/Diskusi_Cinemaindo).",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
                     return
             except UserNotParticipant:
                 await cmd.message.edit(
-                    text="**Kamu Belum Bergabung ☹️, Please Bergabung Channel Updated Untuk Menggunakan Saya!**\n\nDue to Overload, Hanya Pengikut Yang Dapat Menggunakannya!",
+                    text="**Kamu Belum Bergabung ☹️, Bergabung dengan Channel Untuk Menggunakan Saya!**\n\nDue to Overload, Hanya Member Yang Dapat Menggunakan Bot!",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🤖 Pencet & Bergabung", url=invite_link.invite_link)
+                                InlineKeyboardButton("Pencet & Bergabung", url=invite_link.invite_link)
                             ],
                             [
                                 InlineKeyboardButton("🔄 Refresh 🔄", callback_data="refreshmeh")
@@ -390,7 +390,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 return
             except Exception:
                 await cmd.message.edit(
-                    text="Something went Wrong. Contact my [Support Group](https://t.me/ZonaKimochi).",
+                    text="Something went Wrong. Contact my [Support Group](https://t.me/diskusi_Cinemaindo).",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -402,8 +402,8 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Owners Bot", url="https://t.me/ZonaKimochi"),
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/AsupanInsomniaViral")
+                        InlineKeyboardButton("Owners Bot", url="https://t.me/Cinemaindo_admin"),
+                        InlineKeyboardButton("Bots Channel", url="https://t.me/CinemaindoXXI")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
